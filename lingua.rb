@@ -1,5 +1,7 @@
 require 'json'
 require 'set'
+require 'term/ansicolor'
+include Term::ANSIColor
 
 class Lingua
 
@@ -35,11 +37,10 @@ class Lingua
 
 	def exit_with_stats
 		total_error = @error[:gender] + @error[:other]
-		puts "=="
-		puts "Total #{@success[:success]+ total_error} words"
-		puts "Success #{@success[:success]}"
+		puts yellow("Total #{@success[:success]+ total_error} words")
+		puts green("Success #{@success[:success]}")
 		if total_error > 0
-			puts "Errors #{total_error} of which: gender #{@error[:gender]}, other #{@error[:other]}"
+			puts red("Errors #{total_error} of which: gender #{@error[:gender]}, other #{@error[:other]}")
 		end
 		puts "Press any key to exit"
 		gets.chomp
@@ -58,16 +59,16 @@ class Lingua
 		puts "Was ist \"#{en}\" auf #{lang}?"
 		word = gets.chomp
 		if word == other
-			puts "ok"
+			puts green("ok")
 			increment_success
 		elsif word[4,word.length] == other[4,other.length] 
-			puts "Genus: Es ist #{other}"
+			puts red("Genus: Es ist ")+ yellow("#{other}")
 			increment_error(:gender)
 		elsif word == "exit"
 			exit_with_stats
 		else
 			increment_error(:other)
-			puts "Oops. Nein, es ist #{other}"
+			puts red("Oops. Nein es ist ")+ yellow("#{other}")
 		end
 	end
 

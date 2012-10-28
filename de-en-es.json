@@ -2,5 +2,26 @@
 {
 	"plate" : "der Teller",
 	"spoon" : "der Löffel",
-	"cuchillo" : "das Messer"
+	"knife" : "das Messer",
+	"fork" : "die Gabel",
+	"potatoe":"die Kartoffel",
+	"orange":"die Orange",
+	"apple": "der Apfel",
+	"banana": "die Banane",
+	"beer": "das Bier",
+	"bread": "das Brot",
+	"bun (bread)": "das Brödchen",
+	"butter": "die Butter",
+	"meat": "das Fleisch",
+	"yoghurt": "der Joghurt",
+	"cheese": "der Käse",
+	"cake": "der Kuchen",
+	"milk": "die Milch",
+	"water" : "das Mineralwasser",
+	"salat": "der Salat",
+	"ham": "der Schinken",
+	"tomatoe": "die Tomate",
+	"sugar": "der Zucker",
+	"sausage": "der Wurst",
+	"table": "der Tisch"
 }
