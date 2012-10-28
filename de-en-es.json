@@ -1,0 +1,6 @@
+ // english_word : { deutsche_word, (spanish_word)}
+{
+	"plate" : "der Teller",
+	"spoon" : "der Löffel",
+	"cuchillo" : "das Messer"
+}
