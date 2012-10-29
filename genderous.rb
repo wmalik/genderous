@@ -3,7 +3,7 @@ require 'set'
 require 'term/ansicolor'
 include Term::ANSIColor
 
-class Lingua
+class Genderous
 
 	def initialize()
 		@content = load_json("de-en-es.json")
@@ -82,5 +82,5 @@ class Lingua
 	end
 end
 
-li = Lingua.new()
-li.main
+ge = Genderous.new()
+ge.main
